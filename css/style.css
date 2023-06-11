@@ -1,0 +1,18 @@
+#countries-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.country {
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #countries-container {
+        grid-template-columns: 1fr;
+    }
+}
